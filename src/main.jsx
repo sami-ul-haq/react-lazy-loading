@@ -20,7 +20,7 @@ const router = createBrowserRouter(
       <Route
         path="/about"
         element={
-          <Suspense fallback={<h1>Loading About...</h1>}>
+          <Suspense fallback={<h1 className="font-2xl font-bold text-center">Loading About...</h1>}>
             <About />
           </Suspense>
         }
@@ -28,7 +28,7 @@ const router = createBrowserRouter(
       <Route
         path="/contact"
         element={
-          <Suspense fallback={<h1>Loading Contact...</h1>}>
+          <Suspense fallback={<h1 className="font-2xl font-bold text-center">Loading Contact...</h1>}>
             <Contact />
           </Suspense>
         }
