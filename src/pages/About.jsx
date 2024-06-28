@@ -1,6 +1,8 @@
 const About = () => {
   return (
-    <div>About</div>
+    <div className="max-w-[1200px] m-auto">
+      <h1 className="text-3xl font-bold">About</h1>
+    </div>
   )
 }
 
