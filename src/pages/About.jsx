@@ -30,12 +30,14 @@ const About = () => {
     <section className="max-w-[1200px] m-auto p-2">
       <h1 className="text-3xl font-bold mb-5">Our Gallery</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-5">
-        {gallery.slice(0,8).map((gall) => (
+        {gallery.length > 0 ?  gallery.slice(0,8).map((gall) => (
           <div key={gall.id} className="group card border border-black shadow-sm p-3 hover:bg-black transition-all duration-300 ease-in-out">
             <img src={gall.url} alt={gall.title} />
             <h2 className="font-bold group-hover:text-white">{gall.title}</h2>
           </div>
-        ))}
+        ))
+        : <h1 className="text-3xl font-bold mb-5 ">No gallery found</h1>
+      }
       </div>
     </section>
   )
